@@ -1,13 +1,8 @@
 // const
 const MAPBOX_TOKEN =
-  'pk.eyJ1IjoieWlob25nMDYxOCIsImEiOiJja2J3M28xbG4wYzl0MzJxZm0ya2Fua2p2In0.PNKfkeQwYuyGOTT_x9BJ4Q';
+  'pk.eyJ1IjoiY2hhbmdjaGl5b3UiLCJhIjoiY2x1cDF3YTVjMHo1cTJpb3l1ZmQ5eWEzcCJ9.DhLBLbC49Z8zoMOzmPTT_g';
 const MUNICIPALITY_CITIES_ARR = [
-  '北京市',
-  '上海市',
-  '天津市',
-  '重庆市',
-  '香港特别行政区',
-  '澳门特别行政区',
+  '台北市',
 ];
 const MAP_LAYER_LIST = [
   'road-label',
@@ -41,7 +36,7 @@ const PRIVACY_MODE = false;
 const LIGHTS_ON = true;
 
 // IF you outside China please make sure IS_CHINESE = false
-const IS_CHINESE = true;
+const IS_CHINESE = false;
 const USE_ANIMATION_FOR_GRID = false;
 const CHINESE_INFO_MESSAGE = (yearLength: number, year: string): string => {
   const yearStr = year === 'Total' ? '所有' : ` ${year} `;
