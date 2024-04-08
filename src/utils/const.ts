@@ -2,7 +2,12 @@
 const MAPBOX_TOKEN =
   'pk.eyJ1IjoiY2hhbmdjaGl5b3UiLCJhIjoiY2x1cDF3YTVjMHo1cTJpb3l1ZmQ5eWEzcCJ9.DhLBLbC49Z8zoMOzmPTT_g';
 const MUNICIPALITY_CITIES_ARR = [
-  '台北市',
+  '北京市',
+  '上海市',
+  '天津市',
+  '重庆市',
+  '香港特别行政区',
+  '澳门特别行政区',
 ];
 const MAP_LAYER_LIST = [
   'road-label',
