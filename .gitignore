@@ -20,5 +20,3 @@ _site/
 
 config.yaml
 .venv/
-
-package-lock.json
