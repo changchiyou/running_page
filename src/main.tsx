@@ -1,4 +1,5 @@
 import React from 'react';
+import dotenv from 'dotenv';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -11,6 +12,8 @@ import {
 } from './utils/const';
 import '@/styles/index.scss';
 import { withOptionalGAPageTracking } from './utils/trackRoute';
+
+dotenv.config();
 
 if (USE_GOOGLE_ANALYTICS) {
   ReactGA.initialize(GOOGLE_ANALYTICS_TRACKING_ID);

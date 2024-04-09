@@ -51,6 +51,9 @@ jobs:
           # if your default branches is not master, please change it here
           ref: master
 
+      - name: Set Mapbox token environment variable
+        run: echo "REACT_APP_MAPBOX_TOKEN=${{ secrets.MAPBOX_TOKEN }}" >> .env
+
       - name: Cache Data Files
         if: inputs.save_data_in_github_cache
         uses: actions/cache@v4
