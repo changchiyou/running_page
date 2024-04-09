@@ -96,10 +96,10 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-        env:
-          REACT_APP_MAPBOX_TOKEN: ${{ secrets.REACT_APP_MAPBOX_TOKEN }}
       - name: Build
         run: PATH_PREFIX=/${{ github.event.repository.name }} pnpm build
+        env:
+          REACT_APP_MAPBOX_TOKEN: ${{ secrets.REACT_APP_MAPBOX_TOKEN }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
