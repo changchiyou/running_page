@@ -97,7 +97,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
         env:
-          REACT_APP_MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+          REACT_APP_MAPBOX_TOKEN: ${{ secrets.REACT_APP_MAPBOX_TOKEN }}
       - name: Build
         run: PATH_PREFIX=/${{ github.event.repository.name }} pnpm build
 
