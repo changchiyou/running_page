@@ -23,9 +23,6 @@ on:
         type: string
         default: track_data
 
-env:
-  REACT_APP_MAPBOX_TOKEN: ${{ secrets.REACT_APP_MAPBOX_TOKEN }}
-
 permissions:
   contents: read
   pages: write
@@ -100,11 +97,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build
-        run: |
-          PATH_PREFIX=/${{ github.event.repository.name }} pnpm build
-          echo 123
-          echo $REACT_APP_MAPBOX_TOKEN
-          echo 234
+        run: PATH_PREFIX=/${{ github.event.repository.name }} pnpm build
+        env:
+          REACT_APP_MAPBOX_TOKEN: ${{ secrets.REACT_APP_MAPBOX_TOKEN }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
