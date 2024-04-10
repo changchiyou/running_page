@@ -19,6 +19,8 @@ Based on [@yihong0618](https://github.com/yihong0618)'s [running_page](https://g
 
    https://github.com/changchiyou/running_page/blob/44b36969f1b116966ff8fc60b4873cc5ad6f5e6e/src/utils/const.ts#L2-L6
 
+   https://github.com/changchiyou/running_page/blob/44b36969f1b116966ff8fc60b4873cc5ad6f5e6e/src/utils/const.ts#L46-L47
+
 2. [Custom your page](https://github.com/yihong0618/running_page?tab=readme-ov-file#custom-your-page)
 
    https://github.com/changchiyou/running_page/blob/44b36969f1b116966ff8fc60b4873cc5ad6f5e6e/src/static/site-metadata.ts#L12-L27
