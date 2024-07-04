@@ -25,7 +25,7 @@ Based on [@yihong0618](https://github.com/yihong0618)'s [running_page](https://g
 
    https://github.com/changchiyou/running_page/blob/44b36969f1b116966ff8fc60b4873cc5ad6f5e6e/src/static/site-metadata.ts#L12-L27
 
-3. [Download your running data - strava](https://github.com/yihong0618/running_page?tab=readme-ov-file#strava)
+3. [Download your running data - strava](https://github.com/yihong0618/running_page?tab=readme-ov-file#strava) ([strava_refresh_token.sh](/strava_refresh_token.sh))
 4. [Github Actions](https://github.com/yihong0618/running_page?tab=readme-ov-file#github-actions)
 
    https://github.com/changchiyou/running_page/blob/44b36969f1b116966ff8fc60b4873cc5ad6f5e6e/.github/workflows/run_data_sync.yml#L23-L31
