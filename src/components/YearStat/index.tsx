@@ -2,7 +2,6 @@ import { lazy, Suspense } from 'react';
 import Stat from '@/components/Stat';
 import useActivities from '@/hooks/useActivities';
 import { formatPace } from '@/utils/utils';
-import styles from './style.module.scss';
 import useHover from '@/hooks/useHover';
 import { yearStats } from '@assets/index';
 import { loadSvgComponent } from '@/utils/svgUtils';
@@ -51,7 +50,7 @@ const YearStat = ({ year, onClick }: { year: string, onClick: (_year: string) =>
   );
   return (
     <div
-      style={{ cursor: 'pointer' }}
+      className="cursor-pointer"
       onClick={() => onClick(year)}
       {...eventHandlers}
     >
@@ -67,7 +66,7 @@ const YearStat = ({ year, onClick }: { year: string, onClick: (_year: string) =>
       </section>
       {year !== "Total" && (
         <Suspense fallback="loading...">
-          <YearSVG className={styles.yearSVG} />
+          <YearSVG className="my-4 h-4/6 w-4/6 border-0 p-0" />
         </Suspense>
       )}
       <hr color="red" />
